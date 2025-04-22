@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE WEBSITE</title>
+    <link rel="stylesheet" href="main1.css">
+</head>
+
+<body>
+    <header>
+        <NAV class="menubar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="#">🍿POP CORN FLIX</a>
+                </div>
+                <div class="section">
+                <ul>
+                    <li><a href="#english_movies">Home</a></li>
+                    <li><a href="movies1.html">Movies</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+            </div>
+                <!-- Search bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search movies...">
+                    <button onclick="searchMovies()">Search</button>
+                </div>
+            </div>
+            
+        </NAV>
+    </header>
+    <div id="slider">
+        <figure>
+            <a href="interstellar.html">
+                <img src="interstellar1.jpg"></a>
+            <a href="tanhaji.html">
+                <img src="tanhaji3.jpg"></a>
+            <a href="3_idiots.html">
+                <img src="3_Idiots2.jpg"></a>
+            <a href="lotr.html">
+                <img src="lord of the rings4.jpeg"></a>
+           
+        </figure>
+    </div>
+    <section id="english_movies">
+        <h1>TOP ENGLISH MOVIES</h1>
+        <div class="box1"><a href="interstellar.html"><img src="INTERSTELLAR.png" ></a></div>
+        <div class="box1"><a href="the_prestige.html"><img src="the_presitge.jpg" alt="Prestige Poster"></a></div>
+        <div class="box1"><a href="matrix_1.html"><img src="matrix_1.jpg" alt="Matrix Poster"></a></div>
+        <div class="box1"><a href="lotr.html"><img src="lotr.jpg" alt="Lord of the Rings Poster"></a></div>
+        <div class="box1"><a href="inception.html"><img src="INCEPTION.jpg" alt="Inception Poster"></a></div>
+    </section>
+    <section id="hindi_movies">
+        <h1>TOP HINDI MOVIES</h1>
+        <div class="box2"><a href="chhichhore.html"><img src="CHHUCHHORE_POSTER.jpg" alt="Chhichhore Poster"></a></div>
+        <div class="box2"><a href="lagaan.html"><img src="LAGAN_POSTER.jpg" alt="Lagaan Poster"></a></div>
+        <div class="box2"><a href="tanhaji.html"><img src="tanhaji.jpg" alt="Taare Zameen Par Poster"></a></div>
+        <div class="box2"><a href="3_idiots.html"><img src="3_idiots.jpg" alt="3 Idiots Poster"></a></div>
+        <div class="box2"><a href="msdhoni.html"><img src="msdhoni.jpg" alt="MS Dhoni Poster"></a></div>
+    </section>
+    <section id="marathi_movies">
+        <h1>TOP MARATHI MOVIES</h1>
+        <div class="box3"><a href="fatteshikast.html"><img src="fatteshikhast poster.jpeg" alt="Fatteshikhast Poster"></a></div>
+        <div class="box3"><a href="kakan.html"><img src="kakanposter.jpg" alt="Kakan Poster"></a></div>
+        <div class="box3"><a href="naal.html"><img src="nal_poster.jpg" alt="Nal Poster"></a></div>
+        <div class="box3"><a href="ved.html"><img src="vedposter.jpeg" alt="Ved Poster"></a></div>
+        <div class="box3"><a href="natasamrat.html"><img src="natasmrat poster.jpg" alt="Thalii Poster"></a></div>
+    </section>
+    <footer id="footer">
+    <div class="about">
+        <h1 id="a1">"Explore a vast collection of movies from all genres, handpicked for every kind of movie lover"</h1>
+    </div>
+    <div class="cont">
+        <div class="box4">
+            <h6>Are you a fan of Hollywood’s glitz and glamour? Get ready to explore an incredible lineup of English
+                blockbusters, dramas, and everything in between!</h6>
+        </div>
+        <div class="box4">
+            <h6>If Bollywood’s colors, music, and magic are what light up your screen, don’t worry—we've curated a
+                fantastic collection of Hindi movies just for you.</h6>
+        </div>
+        <div class="box4">
+            <h6>And for those who hold Marathi cinema close to their heart, we've got an array of beautiful and
+                meaningful Marathi films to celebrate the essence of storytelling in its purest form.</h6>
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        function searchMovies() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+            const movieLinks = {
+        "interstellar": "interstellar.html",
+        "prestige": "the_prestige.html",
+        "the prestige": "the_prestige.html",
+        "matrix": "matrix_1.html",
+        "the matrix": "matrix_1.html",
+        "lord of the rings": "lotr.html",
+        "lotr": "lotr.html",
+        "inception": "inception.html",
+        "fight club": "fight_club.html",
+        "shawshank redemption": "shwashank_redemption.html",
+        "kingsman: the secret service": "Kingsman_1.html",
+        "kingsman": "Kingsman_1.html",
+        "tanhaji": "tanhaji.html",
+        "sultan": "SULTAN.HTML",
+        "mission majnu": "mission_majnu.html",
+        "m.s.dhoni": "msdhoni.html",
+        "msdhoni": "msdhoni.html",
+        "ms dhoni": "msdhoni.html",
+        "lagaan": "LAGAaN.HTML",
+        "shershaah": "shershaah.html",
+        "chhichhore": "CHHICHHORE.HTML",
+        "3 idiots": "3_idiots.html",
+        "3idiots": "3_idiots.html",
+        "fatteshikhast": "fatteshikast.html",
+        "fatteshikaast": "fatteshikast.html",
+        "kakan": "kakan.html",
+        "naal": "naal.html",
+        "nal": "naal.html",
+        "ved": "ved.HTML",
+        "navra maza navsacha": "navara_maza_navsacha.html",
+        "bhikari": "BHIKARI.HTML",
+        "vaalvi": "vaalvi.html",
+        "valvi": "vaalvi.html",
+        "natsamrat": "natasamrat.html"
+            };
+    
+            if (movieLinks[query]) {
+                window.location.href = movieLinks[query];
+            } else {
+                alert("Movie not found! Try typing a full movie name (e.g., 'Inception')");
+            }
+        }
+    
+        //Trigger search on Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                searchMovies();
+            }
+        });
+    </script>
+    
+        
+</body>
+
+</html>
